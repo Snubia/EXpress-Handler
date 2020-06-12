@@ -1,0 +1,39 @@
+<img class="burgerpic" src ="/assets/img/burger.png">
+<div class="flex-container" style="display: flex; flex-direction:row; justify-content: space-around">
+    <div class="row" style="width: 100%;">
+        <div class="col" id="fresh">
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}     
+                {{> burgers/burger-block devour=true}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col" id="eaten">
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devour=false}}
+                {{/if}}
+                {{/each}}  
+            </ul>      
+        </div>
+    </div>
+</div>
+<h2>Eat-Da-Burger!</h2>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <input type="text" id="burg" style=" font-family: 'Courier New', Courier, monospace; font-size:15px" name="name">
+   
+  </div>
+  <div class="form-group">
+  </div>
+  <input type="hidden" id="devd" name="devoured" value="0">
+
+  <button type="submit" id="create-burger">Submit</button>
+  <h5>Enter a burger you want to eat Click the "Submit" button</h5>
+
+</form>

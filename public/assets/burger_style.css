@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(247, 205, 127);
+    }
+    
+    .burgerpic {
+        height: 300px;
+        width: 200px;
+        margin-left: 45%;
+    }
+    input {
+        height: 80px;
+        width: 400px;
+        margin-left: 40%;
+    }
+    h5 {
+        margin-left: 43%;
+      
+    }
+    button {
+        margin-left: 50%; 
+        margin-top: 10px;
+        height: 35px;
+        width: 60px; 
+        border-radius: 5px;
+        background-color:rgb(131, 131, 201) ;
+        color: white;
+        
+    }
+    
+    h2 {
+        margin-left: 47%;  
+        color: red; 
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #fresh {
+        padding-top :1%;
+        background: #92e192; 
+        font-weight:bold; 
+        height: 200px;
+        font-family: 'Courier New', Courier, monospace; 
+        font-size:15px; 
+        width: 400px; 
+        margin-left: 20%;
+        border-radius:20px;
+    }
+    
+    #eaten {
+        padding-top :1%; 
+        background:rgb(142, 142, 235); 
+        font-family: 'Courier New', Courier, monospace; 
+        font-size:15px ;height: 200px; 
+        width: 400px; 
+        margin-left: 60%; 
+        margin-top:-13%;
+        border-radius:20px;
+    }
