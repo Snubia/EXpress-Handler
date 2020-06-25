@@ -76,15 +76,17 @@ var orm = {
       });
     },
 
-    delete: function(table, devoured, cb) {
-        var queryString = "DELETE FROM " + table + " WHERE " + devoured;
+  //   delete: function(table, devoured, cb) {
+  //       var queryString = "DELETE FROM " + table + " WHERE " + devoured;
     
-        connection.query(queryString, function(err, result) {
-          if (err) {
-            throw err;
-          }
+  //       connection.query(queryString, function(err, result) {
+  //         if (err) {
+  //           throw err;
+  //         }
     
-          cb(result);
-        });
-      }    
+  //         cb(result);
+  //       });
+  //     }    
   };
+
+  module.exports = orm;
